@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify - Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Bookify</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="cart.html" class="cart-icon">🛒</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1 class="page-title">Your Shopping Cart</h1>
+        
+        <!-- Cart Container -->
+        <div class="cart-container">
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <img src="images/midnight.jpeg" alt="The Midnight Library" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">The Midnight Library</h3>
+                        <p class="item-author">by Matt Haig</p>
+                        <p class="item-price">R249.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="text" value="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <span>🗑️</span> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-total">R249.99</div>
+                </div>
+                
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <img src="images/journal.jpeg" alt="Leather Journal" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Premium Leather Journal</h3>
+                        <p class="item-author">Stationery Collection</p>
+                        <p class="item-price">R189.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="text" value="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <span>🗑️</span> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-total">R189.99</div>
+                </div>
+                
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <img src="images/bookmarks.jpeg" alt="Bookmark Set" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Artistic Bookmark Set (5-Pack)</h3>
+                        <p class="item-author">Book Accessories</p>
+                        <p class="item-price">R79.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="text" value="2" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <span>🗑️</span> Remove
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-total">R159.98</div>
+                </div>
+            </div>
+            
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <div class="summary-card">
+                    <h2 class="summary-title">Order Summary</h2>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal (4 items)</span>
+                        <span>R599.96</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>R50.00</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span>R90.00</span>
+                    </div>
+                    
+                    <div class="promo-input">
+                        <input type="text" placeholder="Promo Code" class="promo-code">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                    
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span>R739.96</span>
+                    </div>
+                    
+                    <a href="checkout.html">
+                        <button class="checkout-btn">Proceed to Checkout</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="continue-shopping">
+            <a href="categories.html" class="continue-link">← Continue Shopping</a>
+        </div>
+        
+        <!-- Empty Cart State (Hidden by default) -->
+        <div class="empty-cart">
+            <div class="empty-cart-icon">🛒</div>
+            <h2 class="empty-cart-message">Your cart is empty</h2>
+            <p>Looks like you haven't added any books to your cart yet.</p>
+            <a href="categories.html" class="back-to-store">Explore Our Collection</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bookify. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>

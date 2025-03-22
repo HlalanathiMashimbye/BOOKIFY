@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify - Product Detail</title>
+    <link rel="stylesheet" href="product-descriptions.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Bookify</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="cart.html" class="cart-icon">🛒</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> > 
+            <a href="categories.html">Category</a> > 
+            <span>Product Name</span>
+        </div>
+
+        <!-- Product Detail Section -->
+        <section class="product-detail">
+            <!-- Product Images -->
+            <div class="product-images">
+                <img src="https://source.unsplash.com/random/500x700/?book-cover" alt="Product Image" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="https://source.unsplash.com/random/100x100/?book-cover-1" alt="Thumbnail 1" class="thumbnail active">
+                    <img src="https://source.unsplash.com/random/100x100/?book-cover-2" alt="Thumbnail 2" class="thumbnail">
+                    <img src="https://source.unsplash.com/random/100x100/?book-cover-3" alt="Thumbnail 3" class="thumbnail">
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div class="product-info">
+                <h1 class="product-title">Product Name</h1>
+                <p class="product-author">by Author Name</p>
+                <div class="product-price">R0.00</div>
+                <p class="product-description">
+                    Product description goes here. This is a placeholder for the product description.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="cart.html"><button class="cta-button primary-button">Add to Cart</button></a>
+                    <button class="cta-button secondary-button">Add to Wishlist</button>
+                </div>
+                
+                <div class="product-meta">
+                    <p><strong>Format:</strong> Format Type</p>
+                    <p><strong>Pages:</strong> Number of Pages</p>
+                    <p><strong>ISBN:</strong> ISBN Number</p>
+                    <p><strong>Publisher:</strong> Publisher Name</p>
+                    <p><strong>Language:</strong> Language</p>
+                    <p><strong>Availability:</strong> Availability Status</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Details Tabs -->
+        <section class="product-details-section">
+            <div class="details-tabs">
+                <div class="tab active">Description</div>
+                <div class="tab">Details</div>
+                <div class="tab">Reviews</div>
+            </div>
+            
+            <div class="tab-content active">
+                <p>
+                    Detailed description of the product goes here. This is a placeholder for the detailed description.
+                </p>
+                <p>
+                    Additional information about the product can be included here.
+                </p>
+            </div>
+            
+            <div class="tab-content">
+                <p><strong>Format:</strong> Format Type</p>
+                <p><strong>Pages:</strong> Number of Pages</p>
+                <p><strong>Dimensions:</strong> Dimensions</p>
+                <p><strong>ISBN-10:</strong> ISBN-10 Number</p>
+                <p><strong>ISBN-13:</strong> ISBN-13 Number</p>
+                <p><strong>Publisher:</strong> Publisher Name</p>
+                <p><strong>Language:</strong> Language</p>
+            </div>
+            
+            <div class="tab-content">
+                <div class="review">
+                    <div class="review-header">
+                        <strong>Reviewer Name</strong>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p>Review content goes here. This is a placeholder for the review content.</p>
+                </div>
+                
+                <div class="review">
+                    <div class="review-header">
+                        <strong>Reviewer Name</strong>
+                        <span class="review-rating">★★★★☆</span>
+                    </div>
+                    <p>Review content goes here. This is a placeholder for the review content.</p>
+                </div>
+                
+                <div class="review">
+                    <div class="review-header">
+                        <strong>Reviewer Name</strong>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p>Review content goes here. This is a placeholder for the review content.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <h2 class="section-title">You May Also Like</h2>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="https://source.unsplash.com/random/300x400/?book" alt="Book Cover">
+                        <div class="product-card-info">
+                            <h3 class="product-card-title">How to Stop Time</h3>
+                            <p class="product-card-author">Matt Haig</p>
+                            <p class="product-card-price">R229.99</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="https://source.unsplash.com/random/300x400/?novel" alt="Book Cover">
+                        <div class="product-card-info">
+                            <h3 class="product-card-title">The Invisible Life of Addie LaRue</h3>
+                            <p class="product-card-author">V.E. Schwab</p>
+                            <p class="product-card-price">R269.99</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="https://source.unsplash.com/random/300x400/?fiction" alt="Book Cover">
+                        <div class="product-card-info">
+                            <h3 class="product-card-title">Project Hail Mary</h3>
+                            <p class="product-card-author">Andy Weir</p>
+                            <p class="product-card-price">R249.99</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="product-card">
+                    <a href="product-detail.html">
+                        <img src="https://source.unsplash.com/random/300x400/?bestseller" alt="Book Cover">
+                        <div class="product-card-info">
+                            <h3 class="product-card-title">Klara and the Sun</h3>
+                            <p class="product-card-author">Kazuo Ishiguro</p>
+                            <p class="product-card-price">R259.99</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bookify. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html> 

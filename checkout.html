@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Bookify</a>
+            <a href="cart.html">🛒</a>
+        </nav>
+    </header>
+    
+    <!-- Checkout Form -->
+    <main>
+        <h1>Checkout</h1>
+        
+        <form action="order-confirmation.html" method="POST">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" name="full-name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </fieldset>
+            
+            <!-- Shipping Address -->
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <input type="text" name="address" placeholder="Street Address" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="zip" placeholder="ZIP Code" required>
+            </fieldset>
+            
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>Payment Details</legend>
+                <input type="text" name="card-name" placeholder="Cardholder Name" required>
+                <input type="text" name="card-number" placeholder="Card Number" required>
+                <input type="text" name="exp-date" placeholder="MM/YY" required>
+                <input type="text" name="cvv" placeholder="CVV" required>
+            </fieldset>
+            
+            <!-- Submit Button -->
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bookify. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

@@ -250,3 +250,66 @@ section.contact-form button:hover {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* Header Styles */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Contact Hero Styles */
+    section.contact-hero {
+        padding: 40px 15px;
+    }
+
+    section.contact-hero h2 {
+        font-size: 28px;
+    }
+
+    section.contact-hero p {
+        font-size: 16px;
+    }
+
+    /* Contact Form Styles */
+    section.contact-form {
+        padding: 40px 15px;
+    }
+
+    section.contact-form h2 {
+        font-size: 24px;
+    }
+
+    section.contact-form form {
+        gap: 15px;
+    }
+
+    section.contact-form input,
+    section.contact-form textarea {
+        padding: 10px;
+    }
+
+    section.contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Footer Styles */
+    .footer-column {
+        width: 45%;
+    }
+}
